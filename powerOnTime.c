@@ -80,7 +80,7 @@ static int powerOnTime_proc_show(struct seq_file *m, void *v)
 	getTimeStamp(&time);
 	diff_between_timestamps(initialTime, &time);
 	humanTime = formatTimeStamp(time);
-	seq_printf(m, "powerOn time: %d days %d hours %d minutes %d seconds\n",
+	seq_printf(m, "powerOn time:\t%3d days, %2d hours, %2d minutes, %2d seconds\n",
 		humanTime.days,
 		humanTime.hours,
 		humanTime.minutes,
